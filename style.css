@@ -70,3 +70,41 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.register-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    height: 70vh;
+    background-color: #efefef;;
+
+}
+.form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(202, 199, 199);
+    padding: 0.7rem 0;
+    border-radius: 3rem;
+}
+.input-data{
+    display: inline;
+    justify-content: center;
+    height: 2rem;
+    border-radius: 10px;
+}
+
+.set-icon{
+    display: flex;
+
+    display: inline;
+    margin-top: 1rem;
+}
+
+.set-icon > img{
+    width: 30px;
+}
