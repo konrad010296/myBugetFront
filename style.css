@@ -8,13 +8,22 @@ h2{
     font-size: 2rem;
 }
 
+body{  
+    height: auto;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .heading{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 3rem;
-    height: 30vh;
+    height: 20vh;
 
 }
 .heading > .wallet{
@@ -22,14 +31,15 @@ h2{
 }
 
 .welcome{
-    display: inline-flex;
+    display:inline-flex;
     width: 100vw;
-    height: 70vh;
-    background-color: #efefef;;
+    height: 80vh;
+    background-color: #efefef;
 }
 
 .choise{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -40,6 +50,7 @@ h2{
 }
 
 .wallet-photo{
+
     display: flex;
     align-items: center;
     text-align: center;
@@ -77,12 +88,13 @@ a{
     align-items: center;
     padding: 20px;
     width: 100vw;
-    height: 70vh;
+    height: auto;
     background-color: #efefef;;
 
 }
 .form{
     display: flex;
+    text-align: center;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -98,13 +110,258 @@ a{
     border-radius: 10px;
 }
 
+.input-data{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .set-icon{
     display: flex;
-
-    display: inline;
     margin-top: 1rem;
 }
 
 .set-icon > img{
+    margin: 5px;
     width: 30px;
+}
+
+.select-option{
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+}
+
+.btn-select{
+    width: 7rem;
+    margin-right: 10px;
+    border-radius: 5rem;
+    
+}
+
+.selected-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    transition: .5s;
+    border: none;
+}
+
+
+.selected-option:hover{
+    background-color: bisque;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+margin: 10% 25%;
+background-color: red;
+grid-gap: 10px;
+}
+
+.box{
+    display: flex;
+    height: 300px;
+    background-color: green;
+    border-radius: 40px;
+}
+
+.btns-expense{
+background-color: red;
+}
+
+.form > div{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.element > img:hover{
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.balance-main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    background-color: #efefef;;
+}
+
+.grid-web{
+    margin: 4em;
+    width: 600px;
+    height: 1000px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.box1{
+    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/9;
+    grid-row: 1/3;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box2{
+    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/5;
+    grid-row: 3/8;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box3{
+    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 5/9;
+    grid-row: 3/8;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.box4{
+    grid-auto-rows: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1/9;
+    grid-row: 8/15;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.summary-incomes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+
+}
+
+.inside-summary{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.symbol-summary{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    margin: 5px;
+}
+
+.symbol-summary > img { 
+    margin: 1px;
+    background-color: rgb(13, 216, 189);
+    width: 70%;
+    border-radius: 10px;
+}
+
+.goal{
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 35%;
+    height: 100%;
+}
+
+.price{
+    margin: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 400;
+        width: 40%;
+        height: 100%;
+    }
+.main-window-settings{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 90%;
+    background-color: red;
+}
+
+
+
+@media (max-width: 670px) {
+    .heading {
+      height: 30vh; 
+    }
+    .select-option
+    {
+        height:  20vh;
+    }
+     
+    .balance-main{
+        display: initial;
+        height: auto;
+    }
+    .grid-web
+    {
+       display: initial;
+       width: auto;
+       align-items: center;
+
+    }
+    .welcome{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choise{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wallet-photo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        text-align: center;
+        border: 2px solid black;
+        margin: 10px;
+    }
 }
