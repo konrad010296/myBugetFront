@@ -252,6 +252,7 @@ background-color: red;
     grid-row: 8/15;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
 }
 
 .summary-incomes{
